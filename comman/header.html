@@ -1,0 +1,259 @@
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<script> 
+    var pathname = window.location.pathname;
+    var index = pathname.split("/");
+    var last_index = index[index.length - 1];
+
+    if(last_index == "" || last_index == "index.html"){
+      $(".home").addClass("active");
+    } 
+    else if(last_index == "about.html"){
+      $(".about_drop").addClass("active");
+      $(".about").addClass("active");
+    } 
+    else if(last_index == "team.html"){
+      $(".about_drop").addClass("active");
+      $(".team").addClass("active");
+    } 
+    else if(last_index == "culture.html"){
+      $(".about_drop").addClass("active");
+      $(".culture").addClass("active");
+    }
+    else if(last_index == "work-with-us.html"){
+      $(".about_drop").addClass("active");
+      $(".work_with").addClass("active");
+    }
+    else if(last_index == "services.html"){
+      $(".services_drop").addClass("active");
+    }
+    else if(last_index == "portfolio.html"){
+      $(".portflio_drop").addClass("active");
+      $(".portfolio").addClass("active");
+    }
+    else if(last_index == "projects.html"){
+      $(".portflio_drop").addClass("active");
+      $(".projects").addClass("active");
+    }
+    else if(last_index == "reviews.html"){
+      $(".portflio_drop").addClass("active");
+      $(".reviews").addClass("active");
+    }
+    else if(last_index == "testimonials.html"){
+      $(".portflio_drop").addClass("active");
+      $(".testimonials").addClass("active");
+    }
+    else if(last_index == "pricing.html"){
+      $(".pricing").addClass("active");
+    }
+    else if(last_index == "marketplace.html" || last_index == "marketplace-single.html"){
+      $(".market_place").addClass("active");
+    }
+    else if(last_index == "contact.html"){
+      $(".contact").addClass("active");
+    }
+</script>
+
+<style>
+
+  .service_menu ul li a {
+    text-transform:  capitalize !important;
+  }
+
+  .submenu_hwe{
+    max-height: 260px; 
+    overflow-y: scroll; 
+    scrollbar-width: thin;
+    padding-bottom: 20px !important;
+  }
+
+</style>
+
+<header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- Logo start -->
+    <div class="logo">     
+      <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <a href="index.html" class="logo_made"><span>CnEL</span> <span class="header_logo_n">India</span></a>
+    </div>  
+    <!-- logo end -->    
+
+    <!-- navbar start -->
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="index.html" class="home">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html" class="about_drop"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="about.html" class="about" >About</a></li>                                       
+            <li><a href="reviews.html" class="clients">Clients</a></li>                                      
+            <li><a href="team.html" class="team">Our Team</a></li> 
+            <li><a href="culture.html" class="culture">Work Culture</a></li>                         
+            <li><a href="work-with-us.html" class="work_with">Work With Us</a></li>                         
+          </ul>
+        </li>
+
+
+        <li class="dropdown service_menu">
+
+          <a href="" class="services_drop"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+          <ul class="service_menu">            
+            <li class="dropdown"><a href="backend-development.html"><span>Backend Development</span> <i class="bi bi-chevron-right"></i></a>
+              <ul class="submenu_hwe">
+                <li><a href="api-development.html">API Development</a></li>                              
+                <li><a href="codeigniter-development.html">Codeigniter Development</a></li> 
+                <li><a href="laravel-development.html">Laravel Development</a></li> 
+                <li><a href="php-development.html">PHP Development</a></li>                                                                                            
+              </ul>
+            </li>
+
+            <li class="dropdown"><a href="cms-development.html"><span>CMS Development</span> <i class="bi bi-chevron-right"></i></a>
+              <ul class="submenu_hwe">
+                <li><a href="drupal-development.html">Drupal Development</a></li>
+                <li><a href="moodle-development.html">Moodle Development</a></li>
+              </ul>
+            </li>
+
+
+            <li class="dropdown"><a href="database-administration.html"><span>Database Administration</span> <i class="bi bi-chevron-right"></i></a>
+              <ul class="submenu_hwe">            
+                <li><a href="database-management.html">Database Management</a></li> 
+                <li><a href="mysql.html">MySQL</a></li>  
+                <li><a href="sql.html">SQL</a></li>                            
+              </ul>
+            </li>   
+
+
+            <li class="dropdown"><a href="ecommerce-development.html"><span>E-commerce Development</span> <i class="bi bi-chevron-right"></i></a>
+              <ul class="submenu_hwe" style="max-height: 300px; overflow-y: scroll; scrollbar-width: thin;">
+                <li><a href="dating.html">Dating</a></li>
+                <li><a href="membership-site.html">Membership Site</a></li>                                          
+                <li><a href="multi-vendor.html">Multi Vendor</a></li>
+                <li><a href="magento.html">Magento</a></li>                             
+                <li><a href="magento2.html">Magento 2</a></li> 
+                <li><a href="online-store.html">Online Store</a></li>                                                                          
+                <li><a href="open-cart.html">Open Cart</a></li>  
+                <li><a href="prestashop.html">Prestashop</a></li>   
+                <li><a href="product-import.html">Product Import</a></li>                             
+                <li><a href="payment-gateway-integration.html">Payment Gateway Integration</a></li>   
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="stripe.html">Stripe</a></li> 
+                <li><a href="woocommerce.html">Woocommerce</a></li>                                                          
+              </ul>
+            </li>  
+
+
+            <li class="dropdown"><a href="software-development.html"><span>Software Development</span> <i class="bi bi-chevron-right"></i></a>
+              <ul class="submenu_hwe">                     
+                <li><a href="crm-development.html">CRM Development</a></li>    
+                <li><a href="custom-software-development.html">Custom Software Development</a></li>         
+                <li><a href="erp-development.html">ERP Development</a></li>   
+                <li><a href="odoo-development.html">Odoo Development</a></li>  
+                <li><a href="software-architecture.html">Software Architecture</a></li>                                       
+                <li><a href="software-product-development.html">Software Product Development</a></li>                
+              </ul>
+            </li>     
+            
+            
+            <li class="dropdown"><a href="mobile-application-development.html"><span>Mobile  Application Development</span> <i class="bi bi-chevron-right"></i></a>
+              <ul class="submenu_hwe">
+                <li><a href="app-development.html">App Development</a></li>
+                <li><a href="android-app-development.html">Android App Development</a></li>
+                <li><a href="flutter-app-development.html">Flutter App Development</a></li>
+                <li><a href="mvp-app-development.html">MVP App Development</a></li>
+                <li><a href="react-native-app-development.html">React Native App Development</a></li>                                  
+                <li><a href="web-app-development.html">Web App Development</a></li>                                                                     
+              </ul>
+            </li>   
+            
+            
+            <li class="dropdown"><a href="marketing.html"><span>Marketing</span> <i class="bi bi-chevron-right"></i></a>
+              <ul class="submenu_hwe">                          
+                <li><a href="design-marketing.html">Design Marketing</a></li>                 
+                <li><a href="digital-marketing-strategy.html">Digital Marketing Strategy</a></li>                                    
+                <li><a href="reporting-analaylise.html">Reporting Analaylise</a></li>   
+                <li><a href="social-media-marketing.html">Social Media Marketing</a></li>                  
+              </ul>
+            </li> 
+
+
+            <li class="dropdown"><a href="testing-services.html"><span>Testing Services</span> <i class="bi bi-chevron-right"></i></a>
+              <ul class="submenu_hwe">
+                <li><a href="qa-testing-services.html">QA Testing Services</a></li> 
+                <li><a href="software-testing.html">Software Testing</a></li>                                                   
+              </ul>
+            </li>
+
+
+            <li class="dropdown"><a href="technical-support.html"><span>Technical Support</span> <i class="bi bi-chevron-right"></i></a>
+              <ul class="submenu_hwe">
+                <li><a href="application-maintenance-support.html">Application Maintenance Support</a></li>
+                <li><a href="website-maintenance-support.html">Website Maintenance Support</a></li>
+              </ul>
+            </li>  
+
+
+            <li class="dropdown"><a href="website-development.html"><span>Website Development</span> <i class="bi bi-chevron-right"></i></a>
+              <ul class="submenu_hwe">
+                <li><a href="angularjs-development.html">AngularJS Development</a></li> 
+                <li><a href="buddypress.html">Buddypress</a></li>                 
+                <li><a href="buddyboss.html">Buddyboss</a></li>
+                <li><a href="eventbrite.html">Eventbrite</a></li> 
+                <li><a href="front-end-development.html">Front End Development</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="javascript.html">Javascript</a></li>                                                 
+                <li><a href="jquery.html">Jquery</a></li>   
+                <li><a href="reactjs-development.html">ReactJS Development</a></li> 
+                <li><a href="shopify-development.html">Shopify Development</a></li> 
+                <li><a href="shopware-development.html">Shopware Development</a></li>                                
+                <li><a href="squarespace.html">Squarespace</a></li>    
+                <li><a href="ui-ux-design.html">UI UX Design</a></li>
+                <li><a href="wordpress-development.html">Wordpress Development</a></li>                 
+                <li><a href="wix.html">Wix</a></li>                                                
+                <li><a href="web-scraping.html">Web Scraping</a></li>                          
+              </ul>
+            </li>    
+
+            <li><a href="web-hosting-system-adminitration.html">Web Hosting System Administration</a></li>                                               
+          </ul>
+        </li>
+       
+       
+        <li class="dropdown">
+          <a href="portfolio.html" class="portflio_drop"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="portfolio.html" class="portfolio" >Portfolio</a></li>  
+            <li><a href="projects.html" class="projects">Projects</a></li>                          
+            <li><a href="reviews.html" class="reviews">Reviews</a></li>              
+            <li><a href="testimonials.html" class="testimonials">Testimonials</a></li>            
+          </ul>
+        </li>    
+        
+        
+        <li><a href="contact.html" class="hire_developers">Hire Developers</a></li>                          
+        <li><a href="marketplace.html" class="market_place">Marketplace</a></li>
+        <li><a href="pricing.html" class="pricing">Pricing</a></li>
+        <li><a href="contact.html" class="contact">Contact</a></li>
+        <!-- <li><a class="getstarted" href="about.html">Get Started</a></li> -->
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    <!-- .navbar end -->
+  </div>
+</header>
+
+
+
+<style>
+  .logo_made{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 4px;
+  }
+  .header_logo_n{
+    color: #3c4133;
+  }
+</style>
